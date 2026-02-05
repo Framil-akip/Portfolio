@@ -185,7 +185,7 @@ img {
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 100px;
+    height: 110px;
     display: flex;
     align-items: center;
     transition: var(--transition);
@@ -253,12 +253,12 @@ img {
 
 .navbar .logo-img {
     mix-blend-mode: multiply;
-    height: 55px;
-    /* Scaled down significantly */
+    height: 85px;
+    /* Increased for better visibility */
 }
 
 .logo-img {
-    height: 55px;
+    height: 85px;
     width: auto;
     display: block;
     transition: var(--transition);
