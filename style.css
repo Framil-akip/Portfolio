@@ -252,13 +252,12 @@ img {
 }
 
 .navbar .logo-img {
-    mix-blend-mode: multiply;
-    height: 85px;
-    /* Increased for better visibility */
+    height: 95px;
+    /* Increased to fit the navbar perfectly */
 }
 
 .logo-img {
-    height: 85px;
+    height: 95px;
     width: auto;
     display: block;
     transition: var(--transition);

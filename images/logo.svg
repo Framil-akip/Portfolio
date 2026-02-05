@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100">
+    <defs>
+        <style>
+            .brand-name { fill: #0f172a; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -0.5px; }
+            .tagline { fill: #2563eb; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 5px; text-transform: uppercase; }
+            .accent { fill: #2563eb; }
+        </style>
+    </defs>
+    <!-- Arrow Motif -->
+    <path class="accent" d="M45,20 L25,75 L40,75 L45,60 L65,60 L70,75 L85,75 L65,20 Z M48,50 L55,30 L62,50 Z" />
+    <path class="accent" d="M15,65 Q35,85 90,25 L75,30 M90,25 L85,40" stroke="#2563eb" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <text x="105" y="55" class="brand-name">ARROWVIA</text>
+    <text x="105" y="80" class="tagline">TECHNOLOGIES</text>
+</svg>
