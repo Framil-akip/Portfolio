@@ -4,7 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Details | Academic Engineering Research Portfolio</title>
+    <meta name="description" id="meta-description"
+        content="Detailed technical specifications and implementation breakdown for engineering projects in AI, Web, and IoT.">
+    <meta name="keywords"
+        content="engineering project details, research implementation, technical specifications, academic guidance">
+    <meta name="author" content="Arrowvia Technologies">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arrowvia.com/project-details.html">
+    <meta property="og:title" id="og-title" content="Project Details | Engineering Project Guidance">
+    <meta property="og:description" id="og-description"
+        content="Detailed technical specifications and implementation breakdown for engineering projects.">
+    <meta property="og:image" content="https://arrowvia.com/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" id="twitter-title" content="Project Details | Engineering Project Guidance">
+    <meta property="twitter:description" id="twitter-description"
+        content="Detailed technical specifications and implementation breakdown for engineering projects.">
+    <meta property="twitter:image" content="https://arrowvia.com/images/logo.png">
+
+    <title>Project Details | Engineering Project Guidance</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -604,6 +628,23 @@
 
                 document.getElementById('project-loading').style.display = 'none';
                 document.getElementById('project-display').style.display = 'block';
+
+                // Update SEO Meta Tags Dynamically
+                document.title = `${data.title} | Engineering Project Guidance`;
+                const metaDesc = document.getElementById('meta-description');
+                if (metaDesc) metaDesc.setAttribute('content', data.description.substring(0, 160));
+
+                const ogTitle = document.getElementById('og-title');
+                if (ogTitle) ogTitle.setAttribute('content', data.title);
+
+                const ogDesc = document.getElementById('og-description');
+                if (ogDesc) ogDesc.setAttribute('content', data.description.substring(0, 160));
+
+                const twitterTitle = document.getElementById('twitter-title');
+                if (twitterTitle) twitterTitle.setAttribute('content', data.title);
+
+                const twitterDesc = document.getElementById('twitter-description');
+                if (twitterDesc) twitterDesc.setAttribute('content', data.description.substring(0, 160));
             } else {
                 document.getElementById('project-loading').innerHTML = '<h2>Project Not Found</h2><p>Please return to the <a href="projects.html">catalog</a> to view our active research projects.</p>';
             }
