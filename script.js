@@ -59,6 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         chatbotToggle.addEventListener('click', () => {
             chatbotWindow.classList.toggle('active');
+            const tooltip = document.querySelector('.chatbot-tooltip');
+            if (tooltip) {
+                tooltip.style.display = chatbotWindow.classList.contains('active') ? 'none' : 'block';
+            }
         });
 
         optionBtns.forEach(btn => {
