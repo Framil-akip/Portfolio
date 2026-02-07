@@ -1180,17 +1180,18 @@ img {
 .chatbot-toggle {
     width: 60px;
     height: 60px;
-    background: var(--accent);
+    background: var(--primary);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.3);
     border: none;
-    font-size: 1.8rem;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-size: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .chatbot-toggle:hover {
@@ -1231,23 +1232,25 @@ img {
 }
 
 .chatbot-header {
-    background: var(--primary);
+    background: #0f172a;
     color: white;
     padding: 20px;
     display: flex;
     align-items: center;
     gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .chatbot-header .avatar {
     width: 40px;
     height: 40px;
-    background: var(--accent);
+    background: linear-gradient(135deg, var(--accent) 0%, #1e40af 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .chatbot-header h4 {
