@@ -836,6 +836,16 @@ img {
     opacity: 0.5;
 }
 
+.footer-link {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-link:hover {
+    color: white;
+}
+
 @media (max-width: 480px) {
     .footer-bottom {
         flex-direction: column;
